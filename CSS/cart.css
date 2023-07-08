@@ -1,5 +1,4 @@
 
-  
 body {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +14,23 @@ section {
     align-items: center;
   }
    
-  
+.cart {
+  position:fixed;
+  top:0;
+  right:0;
+  width: 360px;
+  min-height: 100vh;
+  padding:20px;
+  background: var(--bg-color);
+  box-shadow:-2px 0 4px  #3f2a14(1 4% 15% /10%);
+  transition: 0.3s;
+
+}
+span {
+  font-size:20px;
+  font-weight:bold;
+
+}
   
   div {
     margin: 20px;
@@ -36,11 +51,37 @@ section {
     margin: 0;
     color:#3f2a14;
   }
- 
- 
+  .food-stall {
+    margin: 20px;
+    text-align: top;
+    border: 1px solid  #623412; 
+    padding: 10px;
 
-
-  
-  
+}
+.food-stall h2 {
+margin-top: 0;
+}
+.food-stall button {
+  background-color: #623412;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  }
+  #cart {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #623412;
+  text-align: center;
+  }
+  #cart h2 {
+  margin-top: 0;
+  }
+  #cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
   
  
