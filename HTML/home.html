@@ -289,11 +289,11 @@
   {name: 'LAVIE WOMENS HANDBAG', price: 1190.00},
  
   ];
-  // Get references to the HTML elements
+ 
   const cartItemsList = document.querySelector('#cart-items');
   const cartTotalAmount = document.querySelector('#total-amount');
   const checkoutButton = document.querySelector('#checkout');
-  // Define the cart object
+ 
   const cart = {
   items: [],
   total: 0,
@@ -331,7 +331,6 @@
   this.renderCart();
   }
   };
-  // Add event listeners to the add-to-cart buttons
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
   addToCartButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
@@ -341,7 +340,7 @@
   cart.renderCart();
   });
   });
-  // Add event listener to the checkout button
+  
   checkoutButton.addEventListener('click', () => {
   cart.checkout();
   });
